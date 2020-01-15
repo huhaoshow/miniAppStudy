@@ -1,0 +1,9 @@
+<!-- 搜索栏 -->
+<view class="search">
+  <!-- 搜索条 -->
+  <view class="searchBar" data-id="{{id}}">{{msg }}</view>
+</view>
+<!-- 项目栏 -->
+<view class="nav">
+  <view wx:key="index" wx:for="{{nav}}" wx:for-item="value" wx:for-key="index" class="navItem">{{value.name}}{{index}}</view>
+</view>

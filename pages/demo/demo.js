@@ -1,20 +1,11 @@
-//index.js
-//获取应用实例
-const app = getApp()
-
+// pages/demo/demo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    msg: "搜索",
-    id: 1,
-    nav: [
-      { id: 1, name: "项目" },
-      { id: 2, name: "文件" },
-      { id: 3, name: "编辑" },
-      { id: 4, name: "工具" }]
+
   },
 
   /**

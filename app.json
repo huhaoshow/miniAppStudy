@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/category/index",
     "pages/cart/index",
-    "pages/user/index"
+    "pages/user/index",
+    "pages/demo/demo"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -17,6 +18,12 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-o.png"
+      },
+      {
+        "pagePath": "pages/demo/demo",
+        "text": "案例",
         "iconPath": "assets/icons/home.png",
         "selectedIconPath": "assets/icons/home-o.png"
       },
