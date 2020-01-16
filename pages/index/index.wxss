@@ -1,19 +1,65 @@
+page {
+  background-color: #fafafa;
+}
 image {
   width: 100%;
+  height: 100%;
 }
-
+.index-swiper {
+  margin-bottom: 12rpx;
+}
 .index-swiper swiper {
   height: 340rpx;
 }
 .tabNav {
-  padding: 6rpx 30rpx 24rpx;
+  /* padding: 0 30rpx; */
+  margin-bottom: 43rpx;
 }
 .navBar {
-  width:690rpx;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .navBar .navItem {
-  flex: 1;
+  width: 128rpx;
 }
+.navBar .navItem image {
+  height: 140rpx;
+}
+.floor .floorItem {
+  margin-bottom: 10rpx;
+}
+.floor .floorItem .floorTitle {
+  height: 59rpx;
+  margin-bottom: 10rpx;
+}
+
+.floor .floorItem .productList {
+  padding: 0 13rpx;
+  overflow: hidden;
+}
+/* 给每个装图片的盒子浮动,盒子就会按顺序排列,若本层排列不下则会排列到第二层 */
+.floor .floorItem .productList .productImg {
+  float: left;
+} 
+/* 第一个盒子与右侧推开15rpx */
+.floor .floorItem .productList .productImg:first-child {
+  margin-right: 15rpx;
+}
+/* 第2,3个盒子与底部推开10rpx */
+.floor .floorItem .productList .productImg:nth-child(2),
+.floor .floorItem .productList .productImg:nth-child(3) {
+  margin-bottom: 10rpx;
+}
+/* 第2,4个盒子与右侧推开15rpx */
+.floor .floorItem .productList .productImg:nth-child(2),
+.floor .floorItem .productList .productImg:nth-child(4) {
+  margin-right: 15rpx;
+}
+/* 由于请求回来的数据中有每张图片的宽度,所以在循环每层楼的时候将宽度直接赋给每个盒子,但第一个盒子的图片模式使用widthFix让其高度自适应,而剩余的盒子需要统一设置高度,不然浮动会导致盒子排列混乱,由于图片继承父元素的宽高,且高度不会继承,所以需要给后四个图片的父元素设置固定的高度即可 */
+.floor .floorItem .productList .productImg:nth-last-child(-n+4) navigator {
+  height: 188rpx;
+}
+
+
+

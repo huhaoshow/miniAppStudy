@@ -10,12 +10,32 @@
     </swiper-item>
   </swiper>
 </view>
+<!-- 导航栏 -->
 <view class="tabNav">
   <view class="navBar">
     <view class="navItem" wx:for="{{navList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
       <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
-        <image src="{{item.image_src}}" mode="widthFix"></image>
+        <image src="{{item.image_src}}"></image>
       </navigator>
+    </view>
+  </view>
+</view>
+<!-- 产品分类 -->
+<view class="floor">
+  <!-- 产品楼层 -->
+  <view class="floorItem" wx:for="{{floorData}}" wx:for-index="index" wx:key="index">
+    <!-- 楼层标题 -->
+    <view class="floorTitle">
+      <image src="{{item.floor_title.image_src}}"></image>
+    </view>
+    <!-- 产品列表 -->
+    <view class="productList">
+      <!-- 产品图片 -->
+      <view class="productImg" wx:for="{{item.product_list}}" wx:for-item="value" wx:for-index="number" wx:key="number" style="width:{{value.image_width}}rpx">
+        <navigator url="{{value.navigator_url}}" open-type="{{value.open_type}}">
+          <image src="{{value.image_src}}" mode="{{number===0?'widthFix':'scaleToFill'}}"></image>
+        </navigator>
+      </view>
     </view>
   </view>
 </view>
