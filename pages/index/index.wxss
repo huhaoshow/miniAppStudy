@@ -1,31 +1,19 @@
-.search {
-  width: 750rpx;
-  height: 100rpx;
-  background-color: #EA4350;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+image {
+  width: 100%;
 }
-.searchBar {
-  width: 700rpx;
-  height: 80rpx;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5rpx;
-  font-size: 32rpx;
-  font-style: PingFangSC-Regular;
-  line-height: 45rpx;
-  color: #767676;
+
+.index-swiper swiper {
+  height: 340rpx;
 }
-.nav {
-  display: flex;
-  background-color: #ddd;
-  height: 100rpx;
-  line-height: 100rpx;
+.tabNav {
+  padding: 6rpx 30rpx 24rpx;
 }
-.navItem {
-  flex:1;
-  text-align: center;
+.navBar {
+  width:690rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar .navItem {
+  flex: 1;
 }

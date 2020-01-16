@@ -1,0 +1,22 @@
+.search {
+  width: 750rpx;
+  height: 100rpx;
+  background-color: #ea4350;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar {
+  width: 700rpx;
+  height: 80rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rpx;
+  font-size: 32rpx;
+  font-style: PingFangSC-Regular;
+  line-height: 45rpx;
+  color: #767676;
+}
