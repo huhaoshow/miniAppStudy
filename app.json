@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/category/index",
     "pages/cart/index",
-    "pages/user/index"
+    "pages/user/index",
+    "pages/search/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,7 +13,7 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "selectedColor": "#E03440",
+    "selectedColor": "#EA4350",
     "list": [
       {
         "pagePath": "pages/index/index",

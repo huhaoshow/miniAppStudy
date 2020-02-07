@@ -1,10 +1,9 @@
 /**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
+/* 1.引入图标字体库
+  2.初始化样式 */
+  @import "./assets/styles/iconfont.wxss";
+page,text,swiper,swiper-item,image,navigator {
+  padding: 0;
+  margin: 0;  
   box-sizing: border-box;
 } 

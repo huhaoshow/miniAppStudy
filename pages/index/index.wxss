@@ -44,7 +44,7 @@ image {
 } 
 /* 第一个盒子与右侧推开15rpx */
 .floor .floorItem .productList .productImg:first-child {
-  margin-right: 15rpx;
+  margin-right: 13rpx;
 }
 /* 第2,3个盒子与底部推开10rpx */
 .floor .floorItem .productList .productImg:nth-child(2),
@@ -54,7 +54,7 @@ image {
 /* 第2,4个盒子与右侧推开15rpx */
 .floor .floorItem .productList .productImg:nth-child(2),
 .floor .floorItem .productList .productImg:nth-child(4) {
-  margin-right: 15rpx;
+  margin-right: 13rpx;
 }
 /* 由于请求回来的数据中有每张图片的宽度,所以在循环每层楼的时候将宽度直接赋给每个盒子,但第一个盒子的图片模式使用widthFix让其高度自适应,而剩余的盒子需要统一设置高度,不然浮动会导致盒子排列混乱,由于图片继承父元素的宽高,且高度不会继承,所以需要给后四个图片的父元素设置固定的高度即可 */
 .floor .floorItem .productList .productImg:nth-last-child(-n+4) navigator {

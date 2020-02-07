@@ -1,6 +1,6 @@
 <!-- 搜索栏 -->
 <searchInput title="搜索" bindgetChild="handleChild" />
-<!-- 首页-轮播图 -->
+<!-- 首页-轮播图开始 -->
 <view class="index-swiper">
   <swiper indicator-dots="true" autoplay="true" circular="true">
     <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
@@ -10,7 +10,8 @@
     </swiper-item>
   </swiper>
 </view>
-<!-- 导航栏 -->
+<!-- 首页-轮播图结束 -->
+<!-- 导航栏开始 -->
 <view class="tabNav">
   <view class="navBar">
     <view class="navItem" wx:for="{{navList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
@@ -20,7 +21,8 @@
     </view>
   </view>
 </view>
-<!-- 产品分类 -->
+<!-- 导航栏结束 -->
+<!-- 产品分类开始 -->
 <view class="floor">
   <!-- 产品楼层 -->
   <view class="floorItem" wx:for="{{floorData}}" wx:for-index="index" wx:key="index">
@@ -39,3 +41,4 @@
     </view>
   </view>
 </view>
+<!-- 产品分类结束 -->
