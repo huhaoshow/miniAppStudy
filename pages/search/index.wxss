@@ -1,1 +1,50 @@
-/* pages/search/index.wxss */
+.search {
+  margin: 15rpx 0;
+  display: flex;
+  justify-content: space-around;
+}
+.search .searchBar {
+  display: flex;
+  align-items: center;
+  width: 599rpx;
+  height: 61rpx;
+  margin-left: 15rpx;
+  border-radius: 27rpx;
+  font-size: 25rpx;
+  background-color: #e7e7e7;
+}
+.search .searchBtn {
+  width: 101rpx;
+  height: 61rpx;
+  line-height: 61rpx;
+  border-radius: 8rpx;
+  background-color: #EA4350;
+  font-size: 25rpx;
+  color: #fff;
+  text-align: center;
+}
+.searchList {
+  margin: 0 26rpx;
+}
+.searchList .searchItem {
+  width: 698rpx;
+  height: 209rpx;
+  padding: 9rpx 15rpx 0;
+  font-size: 24rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.searchList .searchItem .imageWrap {
+  float: left;
+  margin-right: 30rpx;
+}
+.searchList .searchItem .imageWrap image {
+  width: 190rpx;
+  height: 190rpx;
+}
+.searchList .searchItem .goodsName {
+  margin-top: 26rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

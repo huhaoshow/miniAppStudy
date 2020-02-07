@@ -1,2 +1,28 @@
 <!--pages/search/index.wxml-->
-<text>pages/search/index.wxml</text>
+<!-- 搜索框开始 -->
+<view class="search">
+  <!-- 搜索条 -->
+  <view class="searchBar">
+    <icon type="search"></icon>
+    <input placeholder="输入商品名" bindinput="handleInputChange">
+    </input>
+  </view>
+  <!-- 搜索按钮 -->
+  <view class="searchBtn" bindtap="handleClick">搜索</view>
+</view>
+<!-- 搜索框结束 -->
+<!-- 搜索列表开始 -->
+<view class="searchList">
+  <!-- 搜索结果 -->
+  <block wx:for="{{searchList}}" wx:key="index">
+    <navigator url="/pages/goods_detail/index?goods_id={item.goodes_id}" open-type="navigate" class="searchItem">
+      <view class="imageWrap">
+        <image src="https://api.zbztb.cn/pyg/banner1.png"></image>
+      </view>
+      <view class="goodsName">
+        {{item.goods_name}}
+      </view>
+    </navigator>
+  </block>
+</view>
+<!-- 搜索列表结束 -->
