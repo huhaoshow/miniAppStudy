@@ -1,0 +1,8 @@
+.prodSwiper swiper {
+  height: 497rpx;
+  text-align: center;
+}
+.prodSwiper swiper swiper-item image {
+  width: 497rpx;
+  height: 497rpx;
+}

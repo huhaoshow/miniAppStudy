@@ -1,2 +1,15 @@
 <!--pages/category/index.wxml-->
-<text>pages/category/index.wxml</text>
+<!-- 搜索条开始 -->
+<searchInput />
+<!-- 搜索条结束 -->
+<!-- 分类开始 -->
+<view class="category">
+  <!-- 左边分类列表 -->
+  <scroll-view class="cateforyLeft" scroll-y="true">
+    <view class="categoryItem" wx:for="{{categoriesList}}" wx:key="index">{{item.cat_name}}</view>
+  </scroll-view>
+  <!-- 右边分类详情 -->
+  <scroll-view class="categoryRight"></scroll-view>
+  <!-- 标题 -->
+</view>
+<!-- 分类结束 -->

@@ -1,0 +1,8 @@
+<!-- 商品详情轮播图 -->
+<view class="prodSwiper">
+  <swiper circular="true" indicator-dots="true">
+    <swiper-item wx:for="{{prodData.pics}}" wx:key="index">
+      <image src="{{item.pics_mid}}" bindtap="handleImgPreview" data-pics="{{prodData.pics}}" data-current="{{item.pics_mid}}"></image>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,15 +1,11 @@
-// pages/category/index.js
-// 引入请求库
-import { request } from "../../request/request.js"
+// pages/goods_list/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    categoriesList:[], //左边分类列表数据
-    categoriesContent:[], //右边显示的分类详细内容
-    categoriesIndex: 0 //分类索引值
+
   },
 
   /**
@@ -29,17 +25,8 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: async function () {
-    // 页面显示后请求分类数据渲染页面
-    const getCategoryRes = await request({
-      url: "/categories"
-    });
-    const categoriesList = getCategoryRes.data.message
-    console.log(categoriesList);
-    const categoriesContent = categoriesList[0].children;
-    this.setData({
-      categoriesList,categoriesContent
-    })
+  onShow: function () {
+
   },
 
   /**
