@@ -50,3 +50,14 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
+.prodInfo .desc3 {
+  margin-top: 19rpx;
+}
+.prodInfo .desc3 .imgTextDetail {
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #434343;
+}

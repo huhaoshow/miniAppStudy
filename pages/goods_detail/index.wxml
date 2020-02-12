@@ -27,5 +27,11 @@
     <!-- 商品标题 -->
     <view class="prodTitle">{{prodData.goods_name}}</view>
   </view>
+  <!-- 第三层 -->
+  <view class="desc3">
+    <!-- 图文详情 -->
+    <view class="imgTextDetail">图文详情</view>
+    <rich-text nodes="{{prodData.goods_introduce}}" space="ensp"></rich-text>
+  </view>
 </view>
 <!-- 商品信息结束 -->
