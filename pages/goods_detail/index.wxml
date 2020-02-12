@@ -19,7 +19,7 @@
         <view class="iconfont icon-fenxiang"></view>
         <button size="mini" open-type="share"></button>
       </view>
-      <view class="iconfont icon-shoucang collect"></view>
+      <view class="iconfont {{isCollect?'icon-shoucang_gaoliang active':'icon-shoucang'}} " bindtap="handleCollect"></view>
     </view>
   </view>
   <!-- 第二层 -->
@@ -32,6 +32,24 @@
     <!-- 图文详情 -->
     <view class="imgTextDetail">图文详情</view>
     <rich-text nodes="{{prodData.goods_introduce}}" space="ensp"></rich-text>
+  </view>
+  <!-- 第四层 -->
+  <view class="desc4">
+    <!-- 联系客服 -->
+    <view class="customerService">
+      <view class="iconfont icon-lianxikefu"></view>
+      <view class="text">联系客服</view>
+      <button open-type="contact" size="mini"></button>
+    </view>
+    <!-- 购物车 -->
+    <navigator class="cart" url="/pages/pay/index" open-type="switchTab">
+      <view class="iconfont icon-gouwuche"></view>
+      <view class="text">购物车</view>
+    </navigator>
+    <!-- 加入购物车 -->
+    <view class="addCart">加入购物车</view>
+    <!-- 立即购买 -->
+    <navigator class="buy">立即购买</navigator>
   </view>
 </view>
 <!-- 商品信息结束 -->

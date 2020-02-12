@@ -30,10 +30,6 @@
       .share {
         position: relative;
         margin-right: 45rpx;
-        .icon-fenxiang {
-
-        }
-
         button {
           position: absolute;
           top: 0;
@@ -42,8 +38,8 @@
           height: 30rpx;
         }
       }
-
-      .collect {
+      .active {
+        color: red;
       }
     }
   }
@@ -72,4 +68,67 @@
       color: #434343;
     }
   }
+  .desc4 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 94rpx;
+    background-color: #dedede;
+    .customerService {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       .text {
+        height: 28rpx;
+        font-size: 20rpx;
+        line-height: 28rpx;
+       }
+       button {
+        width: 80rpx;
+        height: 94rpx;
+        background-color: red;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+       }
+     }
+   
+     .cart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       .text {
+        height: 28rpx;
+        font-size: 20rpx;
+        line-height: 28rpx;
+       }
+     }
+   
+     .addCart {
+      width: 196rpx;
+      height: 60rpx;
+      text-align: center;
+      border-radius: 30rpx;
+      background-color: #FCAA23;
+      font-size: 26rpx;
+      line-height: 60rpx;
+      color: #fff;
+     }
+   
+     .buy {
+      width: 196rpx;
+      height: 60rpx;
+      text-align: center;
+      border-radius: 30rpx;
+      background-color: #EA4350;
+      font-size: 26rpx;
+      line-height: 60rpx;
+      color: #fff;   
+     }
+   }
 }
