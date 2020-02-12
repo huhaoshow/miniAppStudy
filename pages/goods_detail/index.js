@@ -29,6 +29,7 @@ Page({
     this.setData({
       prodData
     });
+    console.log(this.data.prodData)
   },
   // 处理图片预览
   handleImgPreview(e) {
