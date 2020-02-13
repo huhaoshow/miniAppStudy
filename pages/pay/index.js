@@ -1,11 +1,11 @@
-// pages/cart/index.js
+// pages/pay/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    prodList:[] // 需要购买的商品列表
+    address: {} // 存储收货地址
   },
 
   /**
@@ -26,13 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    // 从本地取出购物车添加的商品
-    let prodList = wx.getStorageSync("cartList") || [];
-    console.log(prodList[0]);
-    // 更新数据
-    this.setData({
-      prodList
-    });
+
   },
 
   /**

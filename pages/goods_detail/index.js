@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    prodData: {"key":"value"}, //商品详细信息
+    prodData: {}, //商品详细信息
     isCollect: false
   },
 
@@ -23,7 +23,9 @@ Page({
       url: "/goods/detail",
       data: options
     });
-    const {message:prodData} = detailRes.data;
+    const { message } = detailRes.data;
+    // 改造数据,添加num属性,为之后添加购物车作准备
+    const prodData = {...message,num:1};
     // 从本地获取商品收藏列表
     let collectList = wx.getStorageSync("collectList") || [];
     // 查询该商品是否收藏
@@ -75,6 +77,28 @@ Page({
     })
     // 更新本地数据
     wx.setStorageSync("collectList",collectList);
+  },
+  // 点击添加商品进购物车中
+  handleAddProd(e) {
+    // 先将本地中的购物车商品数据取出并改造数据,添加num属性
+    let cartList = wx.getStorageSync("cartList") || [];
+    // 判断购物车中是否有此商品
+    const index = cartList.findIndex(v => v.goods_id === this.data.prodData.goods_id);
+    if(index === -1) {
+      // 购物车中无此商品,将商品添加进购物车
+      cartList.push(this.data.prodData);
+    } else {
+      // 购物车中有此商品,将商品数量加1
+      cartList[index].num+=1;
+    };
+    // 向用户给出提示
+    wx.showToast({
+      title: '添加成功',
+      icon: 'success',
+      mask: 'true'
+    })
+    // 更新本地数据
+    wx.setStorageSync("cartList", cartList);
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

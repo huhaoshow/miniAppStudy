@@ -42,12 +42,12 @@
       <button open-type="contact" size="mini"></button>
     </view>
     <!-- 购物车 -->
-    <navigator class="cart" url="/pages/pay/index" open-type="switchTab">
+    <navigator class="cart" url="/pages/cart/index" open-type="switchTab">
       <view class="iconfont icon-gouwuche"></view>
       <view class="text">购物车</view>
     </navigator>
     <!-- 加入购物车 -->
-    <view class="addCart">加入购物车</view>
+    <view class="addCart" bindtap="handleAddProd">加入购物车</view>
     <!-- 立即购买 -->
     <navigator class="buy">立即购买</navigator>
   </view>

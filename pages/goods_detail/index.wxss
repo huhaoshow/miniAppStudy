@@ -55,6 +55,7 @@
 }
 .prodInfo .desc3 {
   margin-top: 19rpx;
+  margin-bottom: 94rpx;
 }
 .prodInfo .desc3 .imgTextDetail {
   height: 40rpx;

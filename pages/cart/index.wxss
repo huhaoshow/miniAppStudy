@@ -1,1 +1,25 @@
-/* pages/cart/index.wxss */
+.empty {
+  height: 100vh;
+  background-color: #fff;
+  text-align: center;
+}
+.empty .emptyInfo_1 {
+  color: #5f5f64;
+  font-size: 500;
+}
+.empty .emptyInfo_2 {
+  padding: 10rpx;
+  color: #ccc;
+}
+.empty navigator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empty navigator view.goShopping {
+  width: 88rpx;
+  padding: 15rpx;
+  font-size: 20rpx;
+  border: 1rpx solid #ccc;
+  color: #ea4350;
+}

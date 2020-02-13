@@ -7,7 +7,8 @@
     "pages/search/index",
     "pages/goods_list/index",
     "pages/goods_detail/index",
-    "pages/collect/index"
+    "pages/collect/index",
+    "pages/pay/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

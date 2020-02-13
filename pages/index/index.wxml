@@ -14,7 +14,7 @@
 <!-- 导航栏开始 -->
 <view class="tabNav">
   <view class="navBar">
-    <view class="navItem" wx:for="{{navList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+    <view class="navItem" wx:for="{{navList}}" wx:key="index">
       <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
         <image src="{{item.image_src}}"></image>
       </navigator>

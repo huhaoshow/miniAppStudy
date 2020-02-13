@@ -1,0 +1,11 @@
+<!-- 支付页面 -->
+<view class="pygPay">
+  <!-- 收货地址开始 -->
+  <view class="address">
+    <!-- 当有收货地址显示收货地址 -->
+    <view class="shippingAddress" wx:if="{{address.all}}">收货地址</view>
+    <!-- 当没有地址时显示添加地址 -->
+    <view class="chooseAddress" wx:if="{{!address.all}}">选择地址</view>
+  </view>
+  <!-- 收货地址结束 -->
+</view>
